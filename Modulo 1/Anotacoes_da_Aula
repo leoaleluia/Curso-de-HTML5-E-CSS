@@ -1,0 +1,29 @@
+HTML == Focada em conteudo (Videos, textos, tabelas, imagens)
+HyperText = Clica em um texto que direciona para algum local
+Makup = Marcação
+
+CSS = Folhas em cascatas == Atrativos visuais (Textos alinhados, imagens com textos, texos referenciando as imagens)
+
+Conteudo html
+
+<h1> titulo do texto </h1>
+<p>Paragrafo do texto</p>
+<img src="foto.png" alt="exempo da foto"> Tag para foto // src / alt = parâmetros // foto.png e ex de foto = valor
+
+===================================================
+
+Conteudo Css
+
+Para alterar o h1, usamos uma tag style  e dentro dela referenciamos a tag que queremos criar os atrativos visuais
+
+<style>
+    
+    h1 {// as chaves iniciam os seletores
+        font-family: arial; // nessa declaração, colocamos todas as letras do h1 em arial
+        font-size:  20; // tamanho da fonte
+        color: blue; // adciona a cor blue
+        // cada declaração é um par de propriedade e valor
+    }
+</style>
+
+
