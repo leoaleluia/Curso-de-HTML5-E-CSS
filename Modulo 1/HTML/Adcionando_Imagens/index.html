@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <style>
+        body {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeira Imagem em HTML</h1>
+    <p>Imagem de um compressor manipulada para os testes do site</p>
+    <img src="Paisagem400.jpg" alt="Compressor"> <!--Src == onde está o arquivo. alt == Mensagem alternativa do da imagem, o que ela signfica-->
+    <hr>
+    <script>
+        var titulo = window.document.getElementsByTagName('p')[0]
+        titulo.style.color = 'yellow'
+        window.document.write(`O docuumento ' ${titulo.innerHTML} 'está na cor normal`)
+        var corpo = window.document.body
+        corpo.style.background = 'black'
+    </script>
+    
+</body>
+</html>
