@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="novaimg100.png"image/x-icon"> <!--Para poder colocar um icone no na aba do site. lembrando que as imagens devem está na pasta do site, ou seja, na pasta de "adcionando imagens"-->
     <title>Imagens</title>
     <style>
         body {
@@ -14,13 +15,16 @@
     <h1>Primeira Imagem em HTML</h1>
     <p>Imagem de um compressor manipulada para os testes do site</p>
     <img src="Paisagem400.jpg" alt="Compressor"> <!--Src == onde está o arquivo. alt == Mensagem alternativa do da imagem, o que ela signfica-->
+    <!--Caso queiramos adcionar uma imagem da internet, basta copiar a URL dela no campo 'src'-->
+    <img src="novaimg100.png" alt="CursoEmVideoTeste" >
     <hr>
     <script>
         var titulo = window.document.getElementsByTagName('p')[0]
         titulo.style.color = 'yellow'
         window.document.write(`O docuumento ' ${titulo.innerHTML} 'está na cor normal`)
         var corpo = window.document.body
-        corpo.style.background = 'black'
+        corpo.style.background = 'blue'
+        window.alert("bem vindo")
     </script>
     
 </body>
