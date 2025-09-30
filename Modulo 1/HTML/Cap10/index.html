@@ -5,10 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links e ancoras</title>
     <link rel="shortcut icon" href="nuvem.png" type="image/x-icon">
+    <style>
+        body{
+            background-color: rgb(39, 38, 38);
+            color: aliceblue;
+        }
+    </style>
 </head>
 <body>
     <h1>Usando Links externos</h1>
     <p>Você pode acessar o meu git clicando <a href="">aqui: gitLeo</a></p>
-    <p>e ouvir a melhor musica do youtube, clique <a href="https://www.youtube.com/watch?v=Z6uHSdB_vpI&list=RDZ6uHSdB_vpI&start_radio=1" target="_blank" rel="external""> aqui</a></p>
+    <p>e ouvir a melhor musica do youtube, clique <a href="https://www.youtube.com/watch?v=Z6uHSdB_vpI&list=RDZ6uHSdB_vpI&start_radio=1" target="_blank" rel="external" id="msc"> aqui</a></p>
+
+    <script>
+        musica = window.document.getElementById('msc')
+        musica.href = "https://www.youtube.com/watch?v=neII_NZ3soU&list=RDneII_NZ3soU&start_radio=1" //dessa maneira alteramos a musica da referência usando o JS, AO INVÉS DE USARMOS INNERTEXT(TEXTO INTERTNO), USAMOS O HRED, POIS N TAG <A> O HREF RECEBE O LINK
+        nome = window.prompt("Digite seu nome")
+        idade = window.prompt("Digite sua idade")
+        window.document.write(`bem vindo novamente aos estudos em alta,  ${nome}`)
+
+    </script>
+
+    <h2>Links interno</h2>
+    <p>essa é a primeira pagina do site, clique na segunda <a href="pag02.html">Segunda pagina </a></p>
+    <p>Acesse nossa pag de noticias <a href="notícias/pag03.html" target="_self">clique aqui</a></p>
 </body>
 </html>
