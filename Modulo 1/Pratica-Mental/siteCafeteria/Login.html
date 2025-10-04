@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="mundo.png" type="image/x-icon">
+    <style>
+        body{
+            background-color: rgb(194, 124, 39);
+            font: normal;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="t1">Bem vindo ao coffee and coffee</h1>
+    <p id="p1">Possui cadastro? faça o login </p>
+    Digite o login <input type="text" id="login"> <br>
+    Digite a senha <input type="text" id="senha">
+    <input type="button" value="Login" onclick="login()" >
+
+
+    <p id="p2"> Não possui cadastro? clique <a href="pagCadastro.html" id="refcad"> aqui </a></p>
+    <p id="p3"> <a href="" id="a1" target="_self">aqui</a></p>
+    <script>
+        function login(){
+            var txTslogin = window.document.getElementById('login')
+            var txTssenha = window.document.getElementById('senha')
+            var p3 = window.document.getElementById('p3')
+            var senha = txTssenha.value
+            var login = txTslogin.value
+
+            if (login == "admin" &&  senha == "123") {
+
+                window.location.href="pagUsuario.html" //Usamos o window.location para poder abrir a pagina segunte ao clicar no evento, se as condições impostas forem satisfeitas
+            }else {
+                window.alert("Senha incorreta")
+            }
+                
+             
+
+        }
+    </script>
+
+</body>
+</html>
