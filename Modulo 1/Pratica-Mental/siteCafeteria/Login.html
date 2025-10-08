@@ -11,18 +11,33 @@
             font: normal;
             color: aliceblue;
         }
+        section{
+            background-color: rgb(30, 98, 119);
+            padding: 15px;
+            width: 500px;
+            margin:auto;
+            border-radius: 15px;
+        }
     </style>
 </head>
 <body>
-    <h1 id="t1">Bem vindo ao coffee and coffee</h1>
-    <p id="p1">Possui cadastro? faça o login </p>
-    Digite o login <input type="text" id="login"> <br>
-    Digite a senha <input type="text" id="senha">
-    <input type="button" value="Login" onclick="login()" >
+
+    <section>
+
+        <h1 id="t1">Bem vindo ao coffee and coffee</h1>
+        <p id="p1">Possui cadastro? faça o login </p>
+        Digite o login <input type="text" id="login"> <br>
+        Digite a senha <input type="text" id="senha">
+        <input type="button" value="Login" onclick="login()" >
+
+         <p id="p2"> Não possui cadastro? clique <a href="pagCadastro.html" id="refcad"> aqui </a></p>
+         <p id="p3"> <a href="" id="a1" target="_self">aqui</a></p>
+    </section>
 
 
-    <p id="p2"> Não possui cadastro? clique <a href="pagCadastro.html" id="refcad"> aqui </a></p>
-    <p id="p3"> <a href="" id="a1" target="_self">aqui</a></p>
+
+
+    
     <script>
         function login(){
             var txTslogin = window.document.getElementById('login')
