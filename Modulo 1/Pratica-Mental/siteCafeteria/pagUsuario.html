@@ -15,7 +15,14 @@
     </style>
 
     <h1 id="t1">Bem vindo</h1>
-    
+    <script>
+            window.onload = function(){
+                var txt = document.getElementById('t1')
+                var nome1 = localStorage.getItem('nome')
+                txt.innerHTML = `Bem vindos ${nome1}`
+
+            }
+    </script>
     
 </head>
 <body>

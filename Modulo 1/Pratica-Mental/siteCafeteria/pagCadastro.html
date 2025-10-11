@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="shortcut icon" href="mundo.png" type="image/x-icon">
-
-    <style>
-        body{
-            background-color: rgb(194, 124, 39);
-            font: normal;
-            color: aliceblue;
-        }
-    </style>
+    <link rel="stylesheet" href="pagcadstro.css">n
 </head>
 <body>
-    <h1 id="t1"><strong>Pagina de Cadastro</strong></h1>
-    <p id="p1"></p>
-    Digite seu Nome<input type="text" id="nome"> <br>
-    Digite seu login com 5 numeros<input type="number" name="login" id="login"><br>
-    Digite sua senha de 4 numeros <input type="number" name="senha" id="senha">
 
-
-
-    
+    <section>
+        <div id="d1">
+            <p id="p1">Pagina de Cadastro</p>
+        </div>
+        <div>
+            Digite seu nome <input type="text" id="nome"> <br>
+            Digite seu login com 5 números  <input type="number" name="login" id="login"> <br>
+            Digite sua senha com 4 números <input type="number" name="senha" id="senha"> <br>
+            <input type="button" value="Criar Cadastro" onclick="cadastrar()">
+        </div>
+        <div>
+            <p id="p2">Após o cadastro, use o login "admin" e sua senha atual para acessar sua conta</p>
+        </div>
+    </section>
+    <footer><strong>@LeoAleluia</strong></footer>
+    <script src="casdastro.js"></script>
 </body>
 </html>

@@ -30,33 +30,10 @@
         Digite a senha <input type="text" id="senha">
         <input type="button" value="Login" onclick="login()" >
 
-         <p id="p2"> Não possui cadastro? clique <a href="pagCadastro.html" id="refcad"> aqui </a></p>
-         <p id="p3"> <a href="" id="a1" target="_self">aqui</a></p>
+         <p id="p2"> Não possui cadastro? clique <abbr title="Criar cadastro"><a href="pagCadastro.html" id="refcad"> aqui </a></abbr></p>
+         
     </section>
-
-
-
-
+    <Script src="teste.js"></Script>
     
-    <script>
-        function login(){
-            var txTslogin = window.document.getElementById('login')
-            var txTssenha = window.document.getElementById('senha')
-            var p3 = window.document.getElementById('p3')
-            var senha = txTssenha.value
-            var login = txTslogin.value
-
-            if (login == "admin" &&  senha == "123") {
-
-                window.location.href="pagUsuario.html" //Usamos o window.location para poder abrir a pagina segunte ao clicar no evento, se as condições impostas forem satisfeitas
-            }else {
-                window.alert("Senha incorreta")
-            }
-                
-             
-
-        }
-    </script>
-
 </body>
 </html>
