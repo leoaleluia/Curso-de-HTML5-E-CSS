@@ -5,27 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="usuario">Bem vindo </title>
     <link rel="shortcut icon" href="mundo.png" type="image/x-icon">
-
-    <style>
-        body{
-            background-color: rgb(194, 124, 39);
-            font: normal;
-            color: aliceblue;
-        }
-    </style>
-
-    <h1 id="t1">Bem vindo</h1>
-    <script>
-            window.onload = function(){
-                var txt = document.getElementById('t1')
-                var nome1 = localStorage.getItem('nome')
-                txt.innerHTML = `Bem vindos ${nome1}`
-
-            }
-    </script>
+    <link rel="stylesheet" href="pagUsuario.css">
     
 </head>
 <body>
+
+    <head id="h1">
+        <h1 id="t1">Bem vindo</h1>
+    </head>
     
+    <section id="sec">
+        <div id="div1">
+            <p>Bebidas com Cafeina</p>
+            <ol type="I">
+                <li><input type="radio" name="op1" id="caf1" checked> <label for="caf1">Café Normal sem leite Valor: R$ 2.00</label></li> 
+
+                <li><input type="radio" name="op1" id="caf2"><label for="caf2">Café com Leite Valor: R$ 3.50 </label></li>
+
+                <li><input type="radio" name="op1" id="cafe3"><label for="caf3">Café Expresso Valor: R$ 5.00</label></li>
+
+                <li><input type="radio" name="op1" id="caf3"><label for="caf4">Capuccino Valor: R$ 7.00</label></li>
+            </ol>
+        </div>
+
+        <div id="div2">
+            <p>Acompanhamentos</p>
+            <ol type="I">
+                <li><input type="radio" name="pc1" id="pec1" checked><label for="paocovo">Pão Francês com ovo Valor R$ 2.50</label></li>
+                <li><input type="radio" name="pc1" id="pec2"><label for="torta">Torta de chocolate Valor R$ 8.00</label></li>
+                <li><input type="radio" name="pc1" id="pec3"><label for="cuscuz">Cuscuz Temperado Valor R$ 15.00</label></li>
+                <li>
+                    <input type="radio" name="pc1" id="kit"><label for="kit">Kit café da manhã Valor R$ 35.00</label>
+                    <ol type="i">
+                        <li>Banana</li>
+                        <li>Dois ovos</li>
+                        <li>Cuscuz</li>
+                        <li>Pão com queijo</li>
+                        <li>Suco de laranja</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+        <div id="div3">
+            <input type="button" value="Finalizar compra" onclick="finalizar()">
+        </div>
+    </section>
+    <footer>@LeoAleluia</footer>
+    <script src="pgUsuario.js"></script>
 </body>
 </html>

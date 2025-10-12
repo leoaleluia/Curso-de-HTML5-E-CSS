@@ -1,0 +1,25 @@
+head{
+    text-align: center;
+}
+h1#t1{
+    text-align: center;
+}
+
+body{
+    background-color: rgb(194, 124, 39);
+    font: normal;
+    color: aliceblue;
+
+}
+section{
+    font: 8pt normal;
+    background-color: rgb(30, 98, 119);
+    width: 500px;
+    border-radius: 8px;
+    margin: auto;
+    
+}
+footer{
+    text-align: center;
+}
+

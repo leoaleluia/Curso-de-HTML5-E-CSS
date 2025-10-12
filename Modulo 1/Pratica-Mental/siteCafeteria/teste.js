@@ -6,7 +6,7 @@ function login(){
     var login = txTslogin.value
     localStorage.setItem('nome', txTslogin)
 
-    if (txTslogin == "admin") {
+    if (txTslogin) {
 
         window.location.href="pagUsuario.html" //Usamos o window.location para poder abrir a pagina segunte ao clicar no evento, se as condições impostas forem satisfeitas
         }else {
