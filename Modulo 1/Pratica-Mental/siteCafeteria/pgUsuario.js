@@ -1,4 +1,4 @@
-function finalizar(){
+function pagamento(){
     var nome = localStorage.getItem('nome')
     var ctrCafe = document.getElementsByName('op1')
     var ctrAcp = document.getElementsByName('pc1')
