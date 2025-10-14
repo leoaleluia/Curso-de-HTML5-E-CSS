@@ -46,5 +46,10 @@ function pagamento(){
         }
     }
     localStorage.setItem('valortot', total) // Nome da variável e o valor que ela vai armazenar 
+    if (total){
+        window.location.href="pagPagamento.html"
+    }
+
     
+
 }

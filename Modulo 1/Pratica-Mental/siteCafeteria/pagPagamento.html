@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagamento</title>
     <link rel="shortcut icon" href="mundo.png" type="image/x-icon">
+    <link rel="stylesheet" href="pagPagamento.css">
 </head>
 <body>
     <head>
@@ -12,18 +13,20 @@
     </head>
     <section>
         <div> 
+
+            <p id="p1" onload="onload()"></p>
             <p>Escocolha a forma de pagamento</p>
             <input type="radio" name="pag" id="cartDeb" checked><label for="cart">Cartão de debito</label>
             <input type="radio" name="pag" id="cartCred" ><label for="cart">Cartão de credito</label>
-            <input type="radio" name="pag" id="pix"><label for="pix" checked>Pagamento Pix</label>
+            <input type="radio" name="pag" id="pix2"><label for="pix2" checked>Pagamento Pix</label>
             
         </div>
-        <div id="conteudoCart"> <!--Esconde o conteudo dessa div-->
-            <p id="p1"><input type="number" name="numCartao" id="numCartao"></p>
-            <p id="p2"><input type="number" name="dataCartao" id="dataCartao"></p>
-            <p id="p3"><input type="number" name="numSeg" id="numSeguranca"></p>
+        <div id="conteudoCart" style="visibility: hidden"> <!--Esconde o conteudo dessa div-->
+            <p id="p1">Digite o número do cartão<input type="number" name="numCartao" id="numCartao"></p>
+            <p id="p2">Digite a data do cartão<input type="number" name="dataCartao" id="dataCartao"></p>
+            <p id="p3">Digite o código de segurança do cartão<input type="number" name="numSeg" id="numSeguranca"></p>
         </div>
-        <div id="pix">
+        <div id="pix" style="visibility: hidden;">
             <p>Clique <abbr title="código pix"><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Link_pra_pagina_principal_da_Wikipedia-PT_em_codigo_QR_b.svg/330px-Link_pra_pagina_principal_da_Wikipedia-PT_em_codigo_QR_b.svg.png">aqui</a></abbr> para obter o código pix</p>
         </div>
         <div>
