@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposito</title>
+    <link rel="stylesheet" href="deposito.css">
+</head>
+<body>
+    <header><h1>Faça um deposito</h1></header>
+    <section>
+        <div><p id="p1">Digite o valor do deposito <input type="number" name="deposito" id="deposito"></p></div>
+        <div>
+            <input type="radio" name="tipoD" id="cartao" checked> <label for="cartao">Cartão</label>
+            <input type="radio" name="tipoD" id="pix"><label for="pix">Pix</label>
+            <input type="button" value="proximo" onclick="proximo()">
+        </div>
+        <div id="cart" style="visibility: hidden;">
+            <p id="p1Cart">Digite o número do cartão <input type="number" name="numCart" id="numCart"></p>
+            <p id="p2Cart">Digite a data de validade do Cartão <input type="number" name="dataCart" id="dataCart"></p>
+            <p id="p3Cart">Digite o Cod de seg do cartão <input type="number" name="codCart" id="codCart"></p>
+        </div>
+        <div id="divpix" style="visibility: hidden;">
+            <p>cod pix  </p>
+        </div>
+        <div>
+            <input type="button" value="Depositar" onclick="depositar()">
+        </div>
+    </section>
+    <footer>@BancoLA</footer>
+    <script src="deposito.js"></script>
+</body>
+</html>
