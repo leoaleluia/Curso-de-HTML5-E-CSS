@@ -1,1 +1,32 @@
 criando um site basico apenas com o conhecimento basico de html, css e js
+tags usadas e suas funcionalidades
+===================================================
+Pag Login:
+section = cria uma seção, simula um espaço dentro da pagina
+h1 = texto nivel 1
+p = paragrafo
+footer = uma marcação de roda é
+Script = traz o link do script
+body = corpo
+
+Pag  Cadastro:
+input = para entrar com algum dado 
+
+Pag Usuario:
+ol = criar listas e 'li' para ser um item de cada da lista
+input type radio: cria bolinhar para fazer a seleção
+
+Pag Pagamento:
+style="visibility: hidden" = para deixar uma div invisivel
+para ativar a visibility no js
+     if(pagamento[2].checked){
+        div2.style.visibility="visible"
+        div1.style.visibility="hidden"
+    }else{
+        if (pagamento[0].checked || pagamento[1].checked){
+            div1.style.visibility="visible"
+            div2.style.visibility="hidden"
+        }
+    }
+
+    

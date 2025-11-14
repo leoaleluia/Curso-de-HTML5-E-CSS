@@ -4,10 +4,9 @@ function cadastrar(){
     var senha = document.getElementById('senha')
 
 
-    if (login.value > 0) {
-        window.location.href="pagCadastrado.html"
-    }
-    if(login.value == false){
-        alert('Preencha o campo')
+    if (login.value >  0 && senha.value > 0 && txTnome.value != "" ) {
+        window.location.href="pagCadastrado.html" //Usamos o window.location para poder abrir a pagina segunte ao clicar no evento, se as condições impostas forem satisfeitas
+    }else{
+        alert('Preencha todos os campos')
     }
 }

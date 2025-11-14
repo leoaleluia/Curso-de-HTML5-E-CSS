@@ -1,5 +1,5 @@
 function pagamento(){
-    var nome = localStorage.getItem('nome')
+    var nome = localStorage.getItem('nome') //Usamos essa linha para recuperar o nome guardado na variável 'nome'
     var ctrCafe = document.getElementsByName('op1')
     var ctrAcp = document.getElementsByName('pc1')
     var total = 0

@@ -1,10 +1,10 @@
 function login(){
-    var txTslogin = window.document.getElementById('login').value
+    var txTslogin = window.document.getElementById('login')
     var txTssenha = window.document.getElementById('senha')
     var p3 = window.document.getElementById('p3')
     var senha = txTssenha.value
     var login = txTslogin.value
-    localStorage.setItem('nome', txTslogin)
+    localStorage.setItem('nome', txTslogin) //Usamos essa linha para guardar o nome em um banco de dados temporario
 
     if (txTslogin) {
 

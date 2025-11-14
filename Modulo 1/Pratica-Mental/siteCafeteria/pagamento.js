@@ -3,6 +3,8 @@
     var p1 = document.getElementById('p1')
     p1.innerText = `O valor total é de R$ ${valor} reais`
     var numCartao = document.getElementById('numCartao')
+    var dataCart = document.getElementById('dataCartao')
+    var numSeg = document.getElementById('numSeguranca')
     var pix = document.getElementById('pix2')
 
 
@@ -21,8 +23,12 @@ function proximo(){
             div2.style.visibility="hidden"
         }
     }
-    if(numCartao.value){
-        document.location.href="pagCompraFinalizada.html"
-    }
+}
+function finalizar(){
 
+    if(numCartao.value && dataCart.value && numSeg.value){
+        document.location.href="pagCompraFinalizada.html"
+    }else{
+        alert('Preencha todo o campo')
+    }
 }
