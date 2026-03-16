@@ -6,13 +6,18 @@ function login(){
     var login = txTslogin.value
     localStorage.setItem('nome', txTslogin) //Usamos essa linha para guardar o nome em um banco de dados temporario
 
-    if (txTslogin) {
+    
+    function MudarPag(){
+
+        if (login) {
 
         window.location.href="pagUsuario.html" //Usamos o window.location para poder abrir a pagina segunte ao clicar no evento, se as condições impostas forem satisfeitas
         }else {
             window.alert("Senha incorreta")
-        }
-                
-             
+        }     
+    }
+    if (login){
+        MudarPag()
+    }
 
 }
