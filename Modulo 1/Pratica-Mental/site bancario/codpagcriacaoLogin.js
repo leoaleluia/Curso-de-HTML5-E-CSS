@@ -4,12 +4,12 @@ function criar(){
 
     if(txTidCod.value == 1){
         localStorage.setItem('cod', txTidCod.value)
-        localStorage.setItem('nome', txTnome)
+        localStorage.setItem('nome', txTnome.value)
     }else if (txTidCod.value == 2){
         localStorage.setItem('cod', txTidCod.value)
-        localStorage.setItem('nome', txTnome)
+        localStorage.setItem('nome', txTnome.value)
     }else{
         localStorage.setItem('cod', txTidCod.value)
-        localStorage.setItem('nome', txTnome)
+        localStorage.setItem('nome', txTnome.value)
     }
 }
